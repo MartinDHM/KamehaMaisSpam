@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "DBZ"; /* Remplacez par le nom que vous souhaitez utiliser */
+  src: url("../assets/Saiyan-Sans.ttf") format("truetype"); /* Remplacez par le chemin de votre fichier de police */
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../assets/background_kameha_mais_spam.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -2%;
+}
+#unity-container {
+  position: absolute;
+}
+#unity-container.unity-desktop {
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  border: solid black 3px;
+}
+#unity-container.unity-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#unity-canvas {
+  background: #231f20;
+}
+.unity-mobile #unity-canvas {
+  width: 100%;
+  height: 100%;
+}
+#unity-loading-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#unity-logo {
+  width: 154px;
+  height: 130px;
+  background: url("unity-logo-dark.png") no-repeat center;
+}
+#unity-progress-bar-empty {
+  width: 141px;
+  height: 18px;
+  margin-top: 10px;
+  margin-left: 6.5px;
+  background: url("progress-bar-empty-dark.png") no-repeat center;
+}
+#unity-progress-bar-full {
+  width: 0%;
+  height: 18px;
+  margin-top: 10px;
+  background: url("progress-bar-full-dark.png") no-repeat center;
+}
+#unity-footer {
+  position: relative;
+  margin-top: -41px;
+}
+.unity-mobile #unity-footer {
+  display: none;
+}
+#unity-webgl-logo {
+  float: left;
+  width: 204px;
+  height: 38px;
+  background: url("webgl-logo.png") no-repeat center;
+  display: none;
+}
+#unity-build-title {
+  float: right;
+  margin-right: 10px;
+  line-height: 38px;
+  font-family: arial;
+  font-size: 18px;
+  display: none;
+}
+#unity-fullscreen-button {
+  cursor: pointer;
+  float: right;
+  width: 38px;
+  height: 38px;
+  background: url("fullscreen-button.png") no-repeat center;
+}
+#unity-warning {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  background: white;
+  padding: 10px;
+  display: none;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44%;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+}
+.title-insta {
+  font-size: 17px;
+  transition: color 0.3s, cursor 0.3s, font-size 0.3s;
+  margin-left: 11px;
+  color: black;
+  margin-right: 15px;
+  font-family: "DBZ", sans-serif;
+}
+.title-tiktok {
+  font-size: 17px;
+  transition: color 0.3s, cursor 0.3s, font-size 0.3s;
+  margin-right: 15px;
+  font-family: "DBZ", sans-serif;
+}
+.title-soutenir {
+  font-size: 17px;
+  transition: color 0.3s, cursor 0.3s, font-size 0.3s;
+  margin-left: 11px;
+  margin-right: 15px;
+  font-family: "DBZ", sans-serif;
+  color: #efdf2e;
+}
+.text-contour {
+  font-size: 34px; /* Réglez la taille de la police selon vos besoins */
+  font-weight: bold; /* Si vous souhaitez mettre en gras */
+  color: white; /* Couleur du texte */
+  -webkit-text-stroke: 2px black; /* Largeur du contour et couleur (pour les navigateurs WebKit) */
+  text-stroke: 2px white; /* Largeur du contour et couleur (pour les navigateurs qui prennent en charge la spécification standard) */
+}
+
+.title-soutenir:hover,
+.title-insta:hover,
+.title-tiktok:hover {
+  cursor: pointer;
+  color: #efdf2e;
+  font-size: 37px;
+}
+.logo-insta {
+  height: 25px;
+}
+.logo-tiktok {
+  height: 41px;
+}
+.logo-soutenir {
+  height: 41px;
+}
+.change-color {
+  filter: brightness(0);
+}
