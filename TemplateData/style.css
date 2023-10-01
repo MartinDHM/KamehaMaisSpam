@@ -165,3 +165,33 @@ body {
 .change-color {
   filter: brightness(0);
 }
+@media (max-width: 1440px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../assets/background_kameha_mais_spam.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center; /* Centre verticalement */
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65%;
+  }
+  #unity-container.unity-desktop {
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border: solid black 3px;
+  }
+}
