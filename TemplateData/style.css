@@ -2,6 +2,7 @@
   font-family: "DBZ"; /* Remplacez par le nom que vous souhaitez utiliser */
   src: url("../assets/Saiyan-Sans.ttf") format("truetype"); /* Remplacez par le chemin de votre fichier de police */
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -191,8 +192,18 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .Goku {
+    height: 24pc;
+    left: -5%;
+  }
+  .Vegeta {
+    height: 24pc;
+    right: -5%;
+  }
+}
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) and (min-width: 1024px) {
   body {
     padding: 0;
     margin: 0;
@@ -202,7 +213,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: center; /* Centre verticalement */
+    background-position-y: center;
   }
   .logo {
     display: flex;
@@ -215,24 +226,13 @@ body {
     margin-bottom: 0;
   }
   .Goku {
-    margin-top: 38pc;
     height: 24pc;
   }
   .Vegeta {
-    margin-top: 38pc;
     height: 24pc;
-    margin-right: -58px;
-  }
-  @media (max-width: 1200px) {
-    .Goku {
-      display: none;
-    }
-    .Vegeta {
-      display: none;
-    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) and (min-width: 769px) {
     .logo {
       display: flex;
       justify-content: center;
@@ -245,6 +245,14 @@ body {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .Goku {
+      display: none;
+    }
+    .Vegeta {
+      display: none;
     }
   }
 }
