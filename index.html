@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
   <body>
+    <section class="logo-position">
+    <div class="logo">
+      <img
+        class="Logo-taille"
+        src="./assets/logo.png"
+        alt="logo KamehaMaisSpam"
+      />
+    </section>
+    </div>
+    <div class="saiyan">
+      <img class="Goku" src="./assets/goku.png" alt="Goku" />
+      <img class="Vegeta" src="./assets/vegeta.png" alt="Vegeta" />
+    </div>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width="750" height="390" tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -120,33 +133,30 @@
 
       document.body.appendChild(script);
     </script>
-    <footer>
-      <nav class="nav">
-        <a class="social-link" href="" target="_blank">
-          <img
-            class="logo-soutenir change-color"
-            src="./assets/advertising_3180.png"
-            alt="Logo pub"
-          />
-          <h2 class="text-contour title-soutenir">Nous soutenir</h2>
-        </a>
-        <a class="social-link" href="" target="_blank">
-          <img
-            class="logo-insta"
-            src="./assets/Instagram_icon.webp"
-            alt="Logo Instagram"
-          />
-          <h2 class="text-contour title-insta">Instagram</h2>
-        </a>
-        <a class="social-link" href="" target="_blank">
-          <img
-            class="logo-tiktok"
-            src="./assets/Tiktok_icon.webp"
-            alt="Logo Titkok"
-          />
-          <h2 class="text-contour title-tiktok">Tiktok</h2>
-        </a>
-      </nav>
-    </footer>
+    <section class="footer">
+      <div class="Link">
+        <nav class="nav">
+          <a class="social-link" href="" target="_blank">
+            <h2 class="text-contour title-soutenir">Nous soutenir</h2>
+          </a>
+          <a class="social-link" href="" target="_blank">
+            <img
+              class="logo-insta"
+              src="./assets/Instagram_icon.webp"
+              alt="Logo Instagram"
+            />
+            <h2 class="text-contour title-insta">Instagram</h2>
+          </a>
+          <a class="social-link" href="" target="_blank">
+            <img
+              class="logo-tiktok"
+              src="./assets/Tiktok_icon.webp"
+              alt="Logo Titkok"
+            />
+            <h2 class="text-contour title-tiktok">Tiktok</h2>
+          </a>
+        </nav>
+      </div>
+    </section>
   </body>
 </html>
