@@ -99,7 +99,7 @@ body {
   padding: 10px;
   display: none;
 }
-.logo-position {
+.header {
   display: flex;
   justify-content: center;
 }
@@ -126,7 +126,7 @@ body {
 }
 .Link {
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
 }
 .nav {
   display: flex;
@@ -162,6 +162,14 @@ body {
   font-family: "DBZ", sans-serif;
   color: #efdf2e;
 }
+.title-instruction {
+  font-size: 17px;
+  transition: color 0.3s, cursor 0.3s, font-size 0.3s;
+  margin-left: 11px;
+  margin-right: 15px;
+  font-family: "DBZ", sans-serif;
+  color: #efdf2e;
+}
 .text-contour {
   font-size: 34px; /* Réglez la taille de la police selon vos besoins */
   font-weight: bold; /* Si vous souhaitez mettre en gras */
@@ -172,6 +180,7 @@ body {
 
 .title-soutenir:hover,
 .title-insta:hover,
+.instruction:hover,
 .title-tiktok:hover {
   cursor: pointer;
   color: #efdf2e;
@@ -183,6 +192,10 @@ body {
 .logo-tiktok {
   height: 41px;
 }
+.logo-tuto {
+  height: 33px;
+  margin-top: -5px;
+}
 
 .unity-canvas {
   width: 900px;
@@ -191,6 +204,132 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal {
+  background-image: url("../assets/fondModale.png");
+  background-position: center left;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  text-align: center;
+  width: 70%;
+  height: 64%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.instruction {
+  transition: color 0.3s, cursor 0.3s, font-size 0.3s;
+  margin-left: 11px;
+  color: black;
+  margin-right: 15px;
+  font-family: "DBZ", sans-serif;
+  font-size: 34px; /* Réglez la taille de la police selon vos besoins */
+  font-weight: bold; /* Si vous souhaitez mettre en gras */
+  color: white; /* Couleur du texte */
+  -webkit-text-stroke: 2px black; /* Largeur du contour et couleur (pour les navigateurs WebKit) */
+  text-stroke: 2px white;
+}
+.close-modal {
+  font-size: 35px;
+  color: white;
+  margin-right: 5%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin-left: 95%;
+  margin-top: 8%;
+}
+.close-modal:hover {
+  cursor: pointer;
+}
+.regle-modal {
+  font-family: "DBZ", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-top: -36px;
+  margin-right: 15pc;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.regle-text {
+  font-family: "DBZ", sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 15pc;
+  width: 65%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Ajoute un contour noir */
+}
+.control-text {
+  font-family: "DBZ", sans-serif;
+  font-size: 21px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 15pc;
+  width: 60%;
+  margin-bottom: 7pc;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Ajoute un contour noir */
+}
+.control-text2 {
+  font-family: "DBZ", sans-serif;
+  font-size: 21px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 15pc;
+  width: 65%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Ajoute un contour noir */
+}
+.control-text3 {
+  font-family: "DBZ", sans-serif;
+  font-size: 21px;
+  color: red;
+  margin-top: 10px;
+  margin-right: 15pc;
+  width: 65%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Ajoute un contour noir */
+}
+.modal-image {
+  height: 26%;
+  margin-top: -6%;
+  margin-right: 16pc;
+  margin-bottom: 2%;
+}
+.picolo-modal {
+  position: fixed;
+  margin-left: 70%;
+  margin-bottom: -17%;
+  height: 75%;
+}
+.credit {
+  position: fixed;
+  top: 95%;
+  bottom: 5%;
+  right: 2%;
+  color: white;
+  font-family: "DBZ", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Ajoute un contour noir */
 }
 @media (max-width: 1440px) and (min-width: 1201px) {
   .Goku {
@@ -231,6 +370,30 @@ body {
   .Vegeta {
     height: 24pc;
   }
+  .modal-image {
+    display: none;
+  }
+  .control-text2 {
+    font-family: "DBZ", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-top: -72px;
+    margin-right: 15pc;
+    width: 65%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  .regle-modal {
+    font-family: "DBZ", sans-serif;
+    font-size: 56px;
+    color: white;
+    margin-top: -44px;
+    margin-right: 15pc;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    margin-bottom: -1%;
+  }
 
   @media (max-width: 1023px) and (min-width: 769px) {
     .logo {
@@ -246,12 +409,39 @@ body {
       justify-content: space-between;
       margin-bottom: 0;
     }
+    .modal-image {
+      display: none;
+    }
+    .control-text2 {
+      font-family: "DBZ", sans-serif;
+      font-size: 24px;
+      color: white;
+      margin-top: -72px;
+      margin-right: 15pc;
+      width: 65%;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+    .regle-modal {
+      font-family: "DBZ", sans-serif;
+      font-size: 56px;
+      color: white;
+      margin-top: -44px;
+      margin-right: 15pc;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+      margin-bottom: -1%;
+    }
   }
   @media (min-width: 768px) {
     .Goku {
       display: none;
     }
     .Vegeta {
+      display: none;
+    }
+    .modal-image {
       display: none;
     }
   }
