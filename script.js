@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const PicoloImage = document.createElement("img");
     PicoloImage.className = "picolo-modal";
-    PicoloImage.src = "../assets/piccolo.png";
+    PicoloImage.src = "../assets/piccolo.webp";
     modal.appendChild(PicoloImage);
 
     const modalParagraph = document.createElement("p");
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const modalImage = document.createElement("img");
     modalImage.className = "img-modal";
-    modalImage.src = "../assets/spam_technique.jpg";
+    modalImage.src = "../assets/spam_technique.webp";
     modalImage.className = "modal-image";
     modal.appendChild(modalImage);
 
